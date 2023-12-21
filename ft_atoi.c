@@ -1,25 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/11 18:47:08 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2023/12/20 13:38:06 by iksaiz-m         ###   ########.fr       */
+/*   Created: 2023/12/21 15:27:16 by iksaiz-m          #+#    #+#             */
+/*   Updated: 2023/12/21 15:28:52 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+int	ft_atoi(const char *str)
 {
-	if (c >= 'A' && c <= 'Z')
-		c = c +32;
-	return (c);
+	
 }
-/*int main()
-{
-    printf ("%c", (ft_tolower('I')));
-		return(0);
-}*/

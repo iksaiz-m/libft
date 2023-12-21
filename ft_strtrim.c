@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/11 18:47:08 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2023/12/20 13:38:06 by iksaiz-m         ###   ########.fr       */
+/*   Created: 2023/12/21 12:22:49 by iksaiz-m          #+#    #+#             */
+/*   Updated: 2023/12/21 12:25:01 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_tolower(int c)
+char *ft_strtrim(char const *s1, char const *set)
 {
-	if (c >= 'A' && c <= 'Z')
-		c = c +32;
-	return (c);
+    
 }
-/*int main()
-{
-    printf ("%c", (ft_tolower('I')));
-		return(0);
-}*/
+
+//char const *s1 = str = Hola mundo holaho
+//char const *set = Hoh
+//mi programa entre: la mundo hola 

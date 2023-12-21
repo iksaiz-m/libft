@@ -6,11 +6,11 @@
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 20:02:15 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2023/12/14 13:37:04 by iksaiz-m         ###   ########.fr       */
+/*   Updated: 2023/12/20 13:38:13 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -23,7 +23,7 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	while (i >= 0)
 	{
-		if (s[i] != c)
+		if (s[i] != (char )c)
 			i--;
 		else
 		{
