@@ -1,33 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/11 12:05:51 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2023/12/22 15:29:45 by iksaiz-m         ###   ########.fr       */
+/*   Created: 2023/12/26 17:21:24 by iksaiz-m          #+#    #+#             */
+/*   Updated: 2023/12/26 17:27:02 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *str)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t	i;
+    char	joinstring;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+	
 }
-/*int main()
-{
-
-	char *d = "Iker";
-
-    ft_strlen(d);
-    return(0);
-}*/

@@ -1,33 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/11 12:05:51 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2023/12/22 15:29:45 by iksaiz-m         ###   ########.fr       */
+/*   Created: 2023/12/22 15:40:47 by iksaiz-m          #+#    #+#             */
+/*   Updated: 2023/12/26 14:08:50 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-size_t	ft_strlen(const char *str)
+char	*ft_strdup(const char *s1)
 {
-	size_t	i;
+	char	*b;
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+	b = ft_calloc((ft_strlen(s1) + 1), sizeof(char));
+	if (!b)
+		return (NULL);
+	ft_strlcpy(b, s1, ft_strlen(s1) + 1);
+	return (b);
 }
 /*int main()
 {
-
-	char *d = "Iker";
-
-    ft_strlen(d);
-    return(0);
+	char *a = NULL;
+	
+	printf("Original: %s\n", strdup(a));
+	printf("ft: %s", ft_strdup(a));
+	return (0);
 }*/
