@@ -6,29 +6,29 @@
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/03 17:58:17 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2024/01/08 18:21:45 by iksaiz-m         ###   ########.fr       */
+/*   Updated: 2024/01/09 16:19:27 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// Alocar memoria para palabras:
-static char *ft_strndup(const char *s1, size_t n)
+// Asignar memoria para palabras:
+static char	*ft_strndup(const char *s1, size_t n)
 {
-	char *b;
+	char	*b;
 
 	b = ft_calloc((n + 1), sizeof(char));
 	if (!b)
 		return (NULL);
 	ft_strlcpy(b, s1, n + 1);
-	b[n] = '\0';
 	return (b);
 }
+
 // Escribe palabras:
-static char *ft_get_word(char *s, char c, size_t *i)
+static char	*ft_get_word(char *s, char c, size_t *i)
 {
-	char *result;
-	size_t len;
+	char	*result;
+	size_t	len;
 
 	len = 0;
 	while (s[*i + len] != '\0' && s[*i + len] != c)
@@ -41,10 +41,10 @@ static char *ft_get_word(char *s, char c, size_t *i)
 }
 
 // Contar palabras
-static size_t ft_num_word(char const *s, char c)
+static size_t	ft_num_word(char const *s, char c)
 {
-	size_t num_word;
-	size_t i;
+	size_t	num_word;
+	size_t	i;
 
 	i = 0;
 	num_word = 0;
@@ -58,9 +58,9 @@ static size_t ft_num_word(char const *s, char c)
 }
 
 // Resetear memorias:
-static void ft_free(char **a)
+static void	ft_free(char **a)
 {
-	size_t t;
+	size_t	t;
 
 	t = 0;
 	while (a[t] != NULL)
@@ -71,11 +71,11 @@ static void ft_free(char **a)
 	free(a);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	size_t i;
-	size_t t;
-	char **a;
+	size_t	i;
+	size_t	t;
+	char	**a;
 
 	if (s == NULL)
 		return (NULL);
@@ -100,7 +100,7 @@ char **ft_split(char const *s, char c)
 {
 	char	**result;
 
-	result = ft_split("p9919 2928928292", ' ');
+	result = ft_split("     Hola Mundo", ' ');
 	for(int x = 0; result[x] != NULL; x++)
 		printf("%s\n", result[x]);
 	ft_free(result);

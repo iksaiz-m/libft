@@ -6,7 +6,7 @@
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 13:24:33 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2023/12/26 14:08:58 by iksaiz-m         ###   ########.fr       */
+/*   Updated: 2024/01/11 16:42:26 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	char	*a;
+	char	*result;
 	size_t	i;
 
 	i = 0;
-	a = (char *)malloc(count * size);
-	if (!a)
+	result = (char *)malloc(count * size);
+	if (!result)
 		return (NULL);
 	while (i < count * size)
 	{
-		a[i] = 0;
+		result[i] = 0;
 		i++;
 	}
-	return (a);
+	return (result);
 }

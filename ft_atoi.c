@@ -6,7 +6,7 @@
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 15:27:16 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2023/12/22 13:49:28 by iksaiz-m         ###   ########.fr       */
+/*   Updated: 2024/01/11 16:16:35 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 int	ft_atoi(const char *str)
 {
 	int	i;
-	int	k;
+	int	result;
 	int	b;
 
 	i = 0;
-	k = 0;
+	result = 0;
 	b = 0;
 	while ((str[i] == '\f' || str[i] == '\n' || str[i] == '\r'
 			|| str[i] == '\t' || str[i] == '\v' || str[i] == ' '))
@@ -32,12 +32,12 @@ int	ft_atoi(const char *str)
 	}
 	while ((ft_isdigit(str[i])))
 	{
-		k = k * 10 +(str[i] - '0');
+		result = result * 10 +(str[i] - '0');
 		i++;
 	}
 	if (b == 1)
-		return (k * (-(1)));
-	return (k);
+		return (result * (-(1)));
+	return (result);
 }
 /*int main()
 {

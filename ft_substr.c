@@ -6,7 +6,7 @@
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/26 14:09:32 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2024/01/03 18:35:40 by iksaiz-m         ###   ########.fr       */
+/*   Updated: 2024/01/04 15:51:14 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 /*int main()
 {
     char s[] = "lorem ipsu";
-    unsigned int start = 400;
-    printf("ft: %s",ft_substr(s, start, 20));
+    unsigned int start = 0;
+    printf("ft: %s",ft_substr(s, start, 5));
+	printf("\nft: %s",ft_substr(s, 6, 10));
     return (0);
 }*/
