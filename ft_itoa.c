@@ -6,13 +6,13 @@
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/08 18:14:23 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2024/01/10 15:22:43 by iksaiz-m         ###   ########.fr       */
+/*   Updated: 2024/01/17 15:41:20 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	getnums(int n)
+static size_t	getnums(int n)
 {
 	size_t	count;
 

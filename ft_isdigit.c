@@ -6,11 +6,11 @@
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 12:42:27 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2023/12/20 13:42:40 by iksaiz-m         ###   ########.fr       */
+/*   Updated: 2024/01/18 15:39:10 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(int c)
 {

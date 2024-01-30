@@ -6,11 +6,11 @@
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 12:05:51 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2023/12/22 15:29:45 by iksaiz-m         ###   ########.fr       */
+/*   Updated: 2024/01/18 15:38:16 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

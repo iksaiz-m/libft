@@ -6,7 +6,7 @@
 /*   By: iksaiz-m <iksaiz-m@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 15:08:55 by iksaiz-m          #+#    #+#             */
-/*   Updated: 2024/01/10 15:54:47 by iksaiz-m         ###   ########.fr       */
+/*   Updated: 2024/01/17 15:55:26 by iksaiz-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*result;
 
 	i = 0;
-	result = ft_calloc(strlen(s) + 1, sizeof(char));
+	result = ft_calloc(ft_strlen(s) + 1, sizeof(char));
 	if (!result)
 		return (NULL);
 	while (s[i] != '\0')
